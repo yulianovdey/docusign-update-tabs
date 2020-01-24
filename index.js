@@ -47,6 +47,7 @@ const request = require('request-promise-native').defaults({
     });
   }
 
+  // https://developers.docusign.com/esign-rest-api/reference/Envelopes/EnvelopeDocumentTabs/get
   async function getDocumentTabs(envelopeId, documentId) {
     return request({
       method: 'GET',
@@ -54,6 +55,7 @@ const request = require('request-promise-native').defaults({
     });
   }
 
+  // https://developers.docusign.com/esign-rest-api/reference/Envelopes/EnvelopeDocumentTabs/update
   async function updateDocumentTabs(envelopeId, documentId, tabs) {
     return request({
       method: 'PUT',
